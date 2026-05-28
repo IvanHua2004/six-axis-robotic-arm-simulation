@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<robot name="robot_arm_horizontal">
+<robot name="six_axis_robot_arm">
 
   <link name="world"/>
 
-  <!-- ── SHOULDER ── -->
-  <link name="shoulder">
+  <!-- ========== BASE YAW (continuous rotation around Z) ========== -->
+  <link name="base_link">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
-      <geometry><sphere radius="0.055"/></geometry>
+      <geometry><cylinder radius="0.07" length="0.05"/></geometry>
       <material name="dark_grey"><color rgba="0.3 0.3 0.3 1"/></material>
     </visual>
     <inertial>
@@ -16,21 +16,21 @@
     </inertial>
   </link>
 
-  <joint name="shoulder_joint" type="fixed">
+  <joint name="base_yaw" type="continuous">
     <parent link="world"/>
-    <child link="shoulder"/>
+    <child link="base_link"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="1.0"/>
   </joint>
 
-  <!-- ── UPPER ARM ── -->
+  <!-- ========== SHOULDER (pitch around Y) ========== -->
   <link name="upper_arm">
     <visual>
-      <!-- main tube -->
       <origin xyz="0.2 0 0" rpy="0 1.5708 0"/>
       <geometry><cylinder radius="0.03" length="0.4"/></geometry>
       <material name="blue"><color rgba="0.15 0.15 0.75 1"/></material>
     </visual>
-    <!-- joint knob at elbow end -->
     <visual>
       <origin xyz="0.4 0 0" rpy="0 0 0"/>
       <geometry><sphere radius="0.035"/></geometry>
@@ -42,23 +42,21 @@
     </inertial>
   </link>
 
-  <joint name="elbow_joint" type="revolute">
-    <parent link="shoulder"/>
+  <joint name="shoulder_pitch" type="continuous">
+    <parent link="base_link"/>
     <child link="upper_arm"/>
     <origin xyz="0.05 0 0" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 1 0"/>
     <limit effort="10" velocity="1.0"/>
   </joint>
 
-  <!-- ── FOREARM ── -->
+  <!-- ========== ELBOW (pitch around Y) ========== -->
   <link name="forearm">
     <visual>
-      <!-- main tube -->
       <origin xyz="0.15 0 0" rpy="0 1.5708 0"/>
       <geometry><cylinder radius="0.025" length="0.3"/></geometry>
       <material name="green"><color rgba="0.15 0.75 0.15 1"/></material>
     </visual>
-    <!-- wrist knob -->
     <visual>
       <origin xyz="0.3 0 0" rpy="0 0 0"/>
       <geometry><sphere radius="0.03"/></geometry>
@@ -70,23 +68,21 @@
     </inertial>
   </link>
 
-  <joint name="wrist_joint" type="revolute">
+  <joint name="elbow_pitch" type="continuous">
     <parent link="upper_arm"/>
     <child link="forearm"/>
     <origin xyz="0.4 0 0" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 1 0"/>
     <limit effort="5" velocity="1.0"/>
   </joint>
 
-  <!-- ── CLAW BASE — palm block ── -->
+  <!-- ========== WRIST (pitch around Y) ========== -->
   <link name="claw_base">
-    <!-- palm body -->
     <visual>
       <origin xyz="0.03 0 0" rpy="0 0 0"/>
       <geometry><box size="0.06 0.07 0.03"/></geometry>
       <material name="steel"><color rgba="0.65 0.65 0.7 1"/></material>
     </visual>
-    <!-- front ridge -->
     <visual>
       <origin xyz="0.065 0 0" rpy="0 0 0"/>
       <geometry><box size="0.01 0.07 0.025"/></geometry>
@@ -98,29 +94,26 @@
     </inertial>
   </link>
 
-  <joint name="claw_base_joint" type="revolute">
+  <joint name="wrist_pitch" type="continuous">
     <parent link="forearm"/>
     <child link="claw_base"/>
     <origin xyz="0.3 0 0" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 1 0"/>
     <limit effort="5" velocity="1.0"/>
   </joint>
 
-  <!-- ── CLAW LEFT FINGER ── (slides in +Y) -->
+  <!-- ========== CLAW LEFT FINGER (prismatic, Y direction) ========== -->
   <link name="claw_left">
-    <!-- main finger shaft -->
     <visual>
       <origin xyz="0.05 0 0" rpy="0 0 0"/>
       <geometry><box size="0.1 0.015 0.02"/></geometry>
       <material name="steel"><color rgba="0.65 0.65 0.7 1"/></material>
     </visual>
-    <!-- curved tip — angled inward box -->
     <visual>
       <origin xyz="0.105 0 -0.015" rpy="0 0.5 0"/>
       <geometry><box size="0.04 0.015 0.018"/></geometry>
       <material name="steel"><color rgba="0.65 0.65 0.7 1"/></material>
     </visual>
-    <!-- inner grip pad -->
     <visual>
       <origin xyz="0.07 0 -0.012" rpy="0 0 0"/>
       <geometry><box size="0.06 0.013 0.005"/></geometry>
@@ -140,21 +133,18 @@
     <limit lower="0" upper="0.04" effort="5" velocity="0.5"/>
   </joint>
 
-  <!-- ── CLAW RIGHT FINGER ── (slides in -Y) -->
+  <!-- ========== CLAW RIGHT FINGER (prismatic, -Y direction) ========== -->
   <link name="claw_right">
-    <!-- main finger shaft -->
     <visual>
       <origin xyz="0.05 0 0" rpy="0 0 0"/>
       <geometry><box size="0.1 0.015 0.02"/></geometry>
       <material name="steel"><color rgba="0.65 0.65 0.7 1"/></material>
     </visual>
-    <!-- curved tip — angled inward -->
     <visual>
       <origin xyz="0.105 0 -0.015" rpy="0 0.5 0"/>
       <geometry><box size="0.04 0.015 0.018"/></geometry>
       <material name="steel"><color rgba="0.65 0.65 0.7 1"/></material>
     </visual>
-    <!-- inner grip pad -->
     <visual>
       <origin xyz="0.07 0 -0.012" rpy="0 0 0"/>
       <geometry><box size="0.06 0.013 0.005"/></geometry>

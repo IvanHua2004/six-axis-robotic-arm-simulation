@@ -1,0 +1,8 @@
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kbool IKSolver::[01;32m[Ksolve_position[m[K(double, double, double, double&, double&, double&, double&)[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:123:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kz_local[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  123 |       double [01;35m[Kz_local[m[K = L1*std::sin(a1) + L2*std::sin(a2) + CLAW_CENTER_DIST*std::sin(a3_val);
+      |              [01;35m[K^~~~~~~[m[K
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kvoid IKSolver::[01;32m[Ksolve_ik[m[K(double, double, double)[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:224:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdesired_pitch[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  224 |     double [01;35m[Kdesired_pitch[m[K = std::atan2(dz, std::hypot(dx, dy)); // in the arm's plane
+      |            [01;35m[K^~~~~~~~~~~~~[m[K

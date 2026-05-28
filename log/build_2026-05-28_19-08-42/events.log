@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.000762] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.000792] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.014016] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'cmake'}
+[0.014952] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'build'}
+[0.015017] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ivan/Ivan/my_robot/build/my_robot', '--', '-j2', '-l2'], 'cwd': '/home/ivan/Ivan/my_robot/build/my_robot', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ivan', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/ivan', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/ivan/Ivan/my_robot', 'TERM_PROGRAM_VERSION': '1.120.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'ALL': 'en_US.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2205', 'SYSTEMD_EXEC_PID': '2385', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '20936', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'ivan', 'JOURNAL_STREAM': '8:25482', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ivan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/ivan/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/ivan/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/novacam:@/tmp/.ICE-unix/2336,unix/novacam:/tmp/.ICE-unix/2336', 'INVOCATION_ID': '8d616b7c412d43dc85b3dfae887c913a', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WU8QP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-261adc5c65.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install/my_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ivan/Ivan/my_robot/build/my_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install/my_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[0.099725] (-) TimerEvent: {}
+[0.102134] (my_robot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o\x1b[0m\n'}
+[0.199898] (-) TimerEvent: {}
+[0.300566] (-) TimerEvent: {}
+[0.401275] (-) TimerEvent: {}
+[0.502252] (-) TimerEvent: {}
+[0.602602] (-) TimerEvent: {}
+[0.705147] (-) TimerEvent: {}
+[0.805498] (-) TimerEvent: {}
+[0.905860] (-) TimerEvent: {}
+[1.006334] (-) TimerEvent: {}
+[1.106641] (-) TimerEvent: {}
+[1.206972] (-) TimerEvent: {}
+[1.309405] (-) TimerEvent: {}
+[1.409656] (-) TimerEvent: {}
+[1.509917] (-) TimerEvent: {}
+[1.619674] (-) TimerEvent: {}
+[1.729107] (-) TimerEvent: {}
+[1.829557] (-) TimerEvent: {}
+[1.930174] (-) TimerEvent: {}
+[2.033108] (-) TimerEvent: {}
+[2.133418] (-) TimerEvent: {}
+[2.233726] (-) TimerEvent: {}
+[2.334290] (-) TimerEvent: {}
+[2.434887] (-) TimerEvent: {}
+[2.535340] (-) TimerEvent: {}
+[2.636669] (-) TimerEvent: {}
+[2.741544] (-) TimerEvent: {}
+[2.842682] (-) TimerEvent: {}
+[2.951768] (-) TimerEvent: {}
+[3.061573] (-) TimerEvent: {}
+[3.163443] (-) TimerEvent: {}
+[3.263844] (-) TimerEvent: {}
+[3.364316] (-) TimerEvent: {}
+[3.465062] (-) TimerEvent: {}
+[3.565625] (-) TimerEvent: {}
+[3.668379] (-) TimerEvent: {}
+[3.768661] (-) TimerEvent: {}
+[3.869047] (-) TimerEvent: {}
+[3.969427] (-) TimerEvent: {}
+[4.069711] (-) TimerEvent: {}
+[4.169985] (-) TimerEvent: {}
+[4.270934] (-) TimerEvent: {}
+[4.371261] (-) TimerEvent: {}
+[4.472346] (-) TimerEvent: {}
+[4.573047] (-) TimerEvent: {}
+[4.673718] (-) TimerEvent: {}
+[4.774672] (-) TimerEvent: {}
+[4.877153] (-) TimerEvent: {}
+[4.980181] (-) TimerEvent: {}
+[5.080512] (-) TimerEvent: {}
+[5.180812] (-) TimerEvent: {}
+[5.283259] (-) TimerEvent: {}
+[5.383514] (-) TimerEvent: {}
+[5.483852] (-) TimerEvent: {}
+[5.584270] (-) TimerEvent: {}
+[5.685216] (-) TimerEvent: {}
+[5.787123] (-) TimerEvent: {}
+[5.887794] (-) TimerEvent: {}
+[5.989158] (-) TimerEvent: {}
+[6.090148] (-) TimerEvent: {}
+[6.190688] (-) TimerEvent: {}
+[6.291275] (-) TimerEvent: {}
+[6.392210] (-) TimerEvent: {}
+[6.492463] (-) TimerEvent: {}
+[6.592851] (-) TimerEvent: {}
+[6.693109] (-) TimerEvent: {}
+[6.793511] (-) TimerEvent: {}
+[6.894001] (-) TimerEvent: {}
+[6.994569] (-) TimerEvent: {}
+[7.095064] (-) TimerEvent: {}
+[7.197300] (-) TimerEvent: {}
+[7.297794] (-) TimerEvent: {}
+[7.398107] (-) TimerEvent: {}
+[7.498662] (-) TimerEvent: {}
+[7.600177] (-) TimerEvent: {}
+[7.700447] (-) TimerEvent: {}
+[7.800812] (-) TimerEvent: {}
+[7.902542] (-) TimerEvent: {}
+[8.011117] (-) TimerEvent: {}
+[8.111396] (-) TimerEvent: {}
+[8.211674] (-) TimerEvent: {}
+[8.313117] (-) TimerEvent: {}
+[8.422333] (-) TimerEvent: {}
+[8.529009] (-) TimerEvent: {}
+[8.632594] (-) TimerEvent: {}
+[8.733649] (-) TimerEvent: {}
+[8.837107] (-) TimerEvent: {}
+[8.939049] (-) TimerEvent: {}
+[9.043634] (-) TimerEvent: {}
+[9.150777] (-) TimerEvent: {}
+[9.255088] (-) TimerEvent: {}
+[9.355501] (-) TimerEvent: {}
+[9.457644] (-) TimerEvent: {}
+[9.558250] (-) TimerEvent: {}
+[9.658769] (-) TimerEvent: {}
+[9.759004] (-) TimerEvent: {}
+[9.859336] (-) TimerEvent: {}
+[9.960117] (-) TimerEvent: {}
+[10.062746] (-) TimerEvent: {}
+[10.163109] (-) TimerEvent: {}
+[10.264492] (-) TimerEvent: {}
+[10.365141] (-) TimerEvent: {}
+[10.465486] (-) TimerEvent: {}
+[10.565832] (-) TimerEvent: {}
+[10.667129] (-) TimerEvent: {}
+[10.768180] (-) TimerEvent: {}
+[10.870320] (-) TimerEvent: {}
+[10.970724] (-) TimerEvent: {}
+[11.071099] (-) TimerEvent: {}
+[11.174134] (-) TimerEvent: {}
+[11.277084] (-) TimerEvent: {}
+[11.377407] (-) TimerEvent: {}
+[11.479118] (-) TimerEvent: {}
+[11.579427] (-) TimerEvent: {}
+[11.680447] (-) TimerEvent: {}
+[11.782459] (-) TimerEvent: {}
+[11.882748] (-) TimerEvent: {}
+[11.983033] (-) TimerEvent: {}
+[12.083338] (-) TimerEvent: {}
+[12.183649] (-) TimerEvent: {}
+[12.284267] (-) TimerEvent: {}
+[12.385237] (-) TimerEvent: {}
+[12.485540] (-) TimerEvent: {}
+[12.585837] (-) TimerEvent: {}
+[12.687229] (-) TimerEvent: {}
+[12.767215] (my_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik_solver\x1b[0m\n'}
+[12.787339] (-) TimerEvent: {}
+[12.887659] (-) TimerEvent: {}
+[12.987937] (-) TimerEvent: {}
+[13.089232] (-) TimerEvent: {}
+[13.134686] (my_robot) StdoutLine: {'line': b'[100%] Built target ik_solver\n'}
+[13.148026] (my_robot) CommandEnded: {'returncode': 0}
+[13.149358] (my_robot) JobProgress: {'identifier': 'my_robot', 'progress': 'install'}
+[13.159749] (my_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ivan/Ivan/my_robot/build/my_robot'], 'cwd': '/home/ivan/Ivan/my_robot/build/my_robot', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ivan', 'GZ_CONFIG_PATH': '/opt/ros/kilted/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/sdformat_vendor/lib:/opt/ros/kilted/opt/gz_math_vendor/lib:/opt/ros/kilted/opt/gz_utils_vendor/lib:/opt/ros/kilted/opt/rviz_ogre_vendor/lib:/opt/ros/kilted/lib/x86_64-linux-gnu:/opt/ros/kilted/opt/gz_tools_vendor/lib:/opt/ros/kilted/opt/gz_cmake_vendor/lib:/opt/ros/kilted/lib', 'HOME': '/home/ivan', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/ivan/Ivan/my_robot', 'TERM_PROGRAM_VERSION': '1.120.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'ALL': 'en_US.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2205', 'SYSTEMD_EXEC_PID': '2385', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '20936', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'ivan', 'JOURNAL_STREAM': '8:25482', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ivan', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/ivan/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/ivan/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/kilted/opt/gz_tools_vendor/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/novacam:@/tmp/.ICE-unix/2336,unix/novacam:/tmp/.ICE-unix/2336', 'INVOCATION_ID': '8d616b7c412d43dc85b3dfae887c913a', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.WU8QP3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-261adc5c65.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install/my_robot:/opt/ros/kilted', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ivan/Ivan/my_robot/build/my_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/ivan/Ivan/my_robot/install/my_robot:/opt/ros/kilted/opt/sdformat_vendor:/opt/ros/kilted/opt/gz_math_vendor:/opt/ros/kilted/opt/gz_utils_vendor:/opt/ros/kilted/opt/gz_tools_vendor:/opt/ros/kilted/opt/gz_cmake_vendor:/opt/ros/kilted'}), 'shell': False}
+[13.168290] (my_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.169668] (my_robot) StdoutLine: {'line': b'-- Installing: /home/ivan/Ivan/my_robot/install/my_robot/lib/my_robot/ik_solver\n'}
+[13.175141] (my_robot) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ivan/Ivan/my_robot/install/my_robot/lib/my_robot/ik_solver" to ""\n'}
+[13.175548] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/urdf\n'}
+[13.175761] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/urdf/robot_arm.urdf\n'}
+[13.175913] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/launch\n'}
+[13.176045] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/launch/display.launch.py\n'}
+[13.176230] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot\n'}
+[13.176424] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot\n'}
+[13.176601] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/ament_prefix_path.sh\n'}
+[13.176757] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv\n'}
+[13.176894] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/path.sh\n'}
+[13.177032] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/path.dsv\n'}
+[13.177195] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.bash\n'}
+[13.177353] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.sh\n'}
+[13.177507] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.zsh\n'}
+[13.177653] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.dsv\n'}
+[13.177889] (my_robot) StdoutLine: {'line': b'-- Installing: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/package.dsv\n'}
+[13.178379] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/packages/my_robot\n'}
+[13.179091] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake\n'}
+[13.179173] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake\n'}
+[13.179975] (my_robot) StdoutLine: {'line': b'-- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/package.xml\n'}
+[13.180740] (my_robot) CommandEnded: {'returncode': 0}
+[13.189857] (-) TimerEvent: {}
+[13.201886] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[13.203458] (-) EventReactorShutdown: {}
