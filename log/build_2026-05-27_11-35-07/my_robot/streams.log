@@ -1,0 +1,70 @@
+[0.015s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ivan/Ivan/my_robot -DCMAKE_INSTALL_PREFIX=/home/ivan/Ivan/my_robot/install/my_robot
+[0.223s] -- The C compiler identification is GNU 13.3.0
+[0.362s] -- The CXX compiler identification is GNU 13.3.0
+[0.388s] -- Detecting C compiler ABI info
+[0.563s] -- Detecting C compiler ABI info - done
+[0.583s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.583s] -- Detecting C compile features
+[0.583s] -- Detecting C compile features - done
+[0.591s] -- Detecting CXX compiler ABI info
+[0.753s] -- Detecting CXX compiler ABI info - done
+[0.764s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.764s] -- Detecting CXX compile features
+[0.765s] -- Detecting CXX compile features - done
+[0.778s] -- Found ament_cmake: 2.7.5 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.960s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.148s] -- Found rclcpp: 29.5.7 (/opt/ros/kilted/share/rclcpp/cmake)
+[1.189s] -- Found rosidl_generator_c: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[1.208s] -- Found rosidl_generator_cpp: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[1.228s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.251s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.329s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[1.332s] -- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[1.438s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.446s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.521s] -- Found sensor_msgs: 5.5.2 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[1.585s] -- Found visualization_msgs: 5.5.2 (/opt/ros/kilted/share/visualization_msgs/cmake)
+[1.677s] Error parsing '/home/ivan/Ivan/my_robot/package.xml':
+[3.667s] Traceback (most recent call last):
+[3.667s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[3.669s]     root = dom.parseString(data)
+[3.669s]            ^^^^^^^^^^^^^^^^^^^^^
+[3.670s]   File "/usr/lib/python3.12/xml/dom/minidom.py", line 1995, in parseString
+[3.670s]     return expatbuilder.parseString(string)
+[3.670s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.670s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 922, in parseString
+[3.670s]     return builder.parseString(string)
+[3.670s]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[3.670s]   File "/usr/lib/python3.12/xml/dom/expatbuilder.py", line 220, in parseString
+[3.670s]     parser.Parse(string, True)
+[3.670s] xml.parsers.expat.ExpatError: not well-formed (invalid token): line 11, column 3
+[3.670s] 
+[3.670s] During handling of the above exception, another exception occurred:
+[3.670s] 
+[3.670s] Traceback (most recent call last):
+[3.670s]   File "/opt/ros/kilted/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.670s]     main()
+[3.670s]   File "/opt/ros/kilted/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.670s]     raise e
+[3.670s]   File "/opt/ros/kilted/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.670s]     package = parse_package_string(
+[3.670s]               ^^^^^^^^^^^^^^^^^^^^^
+[3.670s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[3.671s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[3.671s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/ivan/Ivan/my_robot/package.xml':
+[3.671s] The manifest contains invalid XML:
+[3.671s] not well-formed (invalid token): line 11, column 3
+[3.745s] [31mCMake Error at /opt/ros/kilted/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.745s]   execute_process(/usr/bin/python3
+[3.745s]   /opt/ros/kilted/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.745s]   /home/ivan/Ivan/my_robot/package.xml
+[3.745s]   /home/ivan/Ivan/my_robot/build/my_robot/ament_cmake_core/package.cmake)
+[3.746s]   returned error code 1
+[3.748s] Call Stack (most recent call first):
+[3.748s]   /opt/ros/kilted/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.748s]   /opt/ros/kilted/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[3.748s]   CMakeLists.txt:35 (ament_package)
+[3.748s] 
+[3.748s] [0m
+[3.748s] -- Configuring incomplete, errors occurred!
+[3.764s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ivan/Ivan/my_robot -DCMAKE_INSTALL_PREFIX=/home/ivan/Ivan/my_robot/install/my_robot

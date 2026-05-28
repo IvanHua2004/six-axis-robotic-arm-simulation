@@ -1,0 +1,11 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o[0m
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kbool IKSolver::[01;32m[Ksolve_ik_3dof[m[K(double, double, double, double&, double&, double&)[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:100:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble a123[m[K’
+  100 |       double [01;31m[Ka123[m[K = q1 + q2 + q3;
+      |              [01;31m[K^~~~[m[K
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:85:22:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble a123[m[K’ previously declared here
+   85 |       double cx, cy, [01;36m[Ka123[m[K;
+      |                      [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ik_solver.dir/build.make:76: CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

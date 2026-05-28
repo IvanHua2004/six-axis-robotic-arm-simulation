@@ -1,0 +1,24 @@
+[0.015s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ivan/Ivan/my_robot -DCMAKE_INSTALL_PREFIX=/home/ivan/Ivan/my_robot/install/my_robot
+[0.035s] -- Found ament_cmake: 2.7.5 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.324s] -- Found rclcpp: 29.5.7 (/opt/ros/kilted/share/rclcpp/cmake)
+[0.394s] -- Found rosidl_generator_c: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_c/cmake)
+[0.419s] -- Found rosidl_generator_cpp: 4.9.6 (/opt/ros/kilted/share/rosidl_generator_cpp/cmake)
+[0.445s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.471s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.563s] -- Found rmw_implementation_cmake: 7.8.2 (/opt/ros/kilted/share/rmw_implementation_cmake/cmake)
+[0.564s] -- Found rmw_fastrtps_cpp: 9.3.3 (/opt/ros/kilted/share/rmw_fastrtps_cpp/cmake)
+[0.617s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.714s] -- Found sensor_msgs: 5.5.2 (/opt/ros/kilted/share/sensor_msgs/cmake)
+[0.784s] -- Found visualization_msgs: 5.5.2 (/opt/ros/kilted/share/visualization_msgs/cmake)
+[0.897s] -- Configuring done (0.9s)
+[0.912s] -- Generating done (0.0s)
+[0.918s] -- Build files have been written to: /home/ivan/Ivan/my_robot/build/my_robot
+[0.925s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ivan/Ivan/my_robot -DCMAKE_INSTALL_PREFIX=/home/ivan/Ivan/my_robot/install/my_robot
+[0.925s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2
+[0.978s] [ 50%] [32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o[0m
+[8.081s] gmake[2]: *** wait: No child processes.  Stop.
+[8.081s] gmake[2]: *** Waiting for unfinished jobs....
+[8.081s] gmake[2]: *** wait: No child processes.  Stop.
+[8.081s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+[8.081s] gmake: *** [Makefile:146: all] Interrupt
+[8.115s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2

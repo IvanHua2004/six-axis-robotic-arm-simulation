@@ -1,0 +1,29 @@
+[0.019s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2
+[0.166s] [ 50%] [32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o[0m
+[18.864s] [100%] [32m[1mLinking CXX executable ik_solver[0m
+[20.070s] [100%] Built target ik_solver
+[20.220s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2
+[20.286s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ivan/Ivan/my_robot/build/my_robot
+[20.332s] -- Install configuration: ""
+[20.332s] -- Installing: /home/ivan/Ivan/my_robot/install/my_robot/lib/my_robot/ik_solver
+[20.333s] -- Set non-toolchain portion of runtime path of "/home/ivan/Ivan/my_robot/install/my_robot/lib/my_robot/ik_solver" to ""
+[20.333s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/urdf
+[20.333s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/urdf/robot_arm.urdf
+[20.333s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/launch
+[20.333s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/launch/display.launch.py
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/package_run_dependencies/my_robot
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/parent_prefix_path/my_robot
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/ament_prefix_path.sh
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/ament_prefix_path.dsv
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/path.sh
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/environment/path.dsv
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.bash
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.sh
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.zsh
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/local_setup.dsv
+[20.334s] -- Installing: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/package.dsv
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/ament_index/resource_index/packages/my_robot
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/cmake/my_robotConfig.cmake
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/cmake/my_robotConfig-version.cmake
+[20.334s] -- Up-to-date: /home/ivan/Ivan/my_robot/install/my_robot/share/my_robot/package.xml
+[20.345s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ivan/Ivan/my_robot/build/my_robot

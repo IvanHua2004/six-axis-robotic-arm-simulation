@@ -1,0 +1,7 @@
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kvoid IKSolver::[01;32m[Ksolve_ik[m[K(double, double)[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:145:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbase_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  145 |     double [01;35m[Kbase_x[m[K = 0.0;               // shoulder position in world frame (after offset)
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:146:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbase_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  146 |     double [01;35m[Kbase_y[m[K = 0.0;
+      |            [01;35m[K^~~~~~[m[K
