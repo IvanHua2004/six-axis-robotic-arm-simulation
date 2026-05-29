@@ -1,0 +1,10 @@
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kvoid IKSolver::[01;32m[Ksetup_interactive_marker[m[K()[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:268:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kc[m[K’
+  268 |     move_xy.orientation.z    = std::sin(M_PI [01;31m[Kc[m[K/ 4.0);
+      |                                              [01;31m[K^[m[K
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:268:40:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  268 |     move_xy.orientation.z    = std::sin[01;36m[K([m[KM_PI c/ 4.0);
+      |                                        [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/ik_solver.dir/build.make:76: CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,8 @@
+[0.016s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2
+[0.122s] [ 50%] [32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o[0m
+[6.867s] gmake[2]: *** wait: No child processes.  Stop.
+[6.867s] gmake[2]: *** Waiting for unfinished jobs....
+[6.867s] gmake[2]: *** wait: No child processes.  Stop.
+[6.868s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+[6.868s] gmake: *** [Makefile:146: all] Interrupt
+[6.955s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2

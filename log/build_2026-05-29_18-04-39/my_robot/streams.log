@@ -1,0 +1,10 @@
+[0.013s] Invoking command in '/home/ivan/Ivan/my_robot/build/my_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2
+[0.083s] [ 50%] [32mBuilding CXX object CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o[0m
+[2.568s] [01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kvoid IKSolver::[01;32m[Ksetup_interactive_marker[m[K()[m[K’:
+[2.569s] [01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:269:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kint_marker[m[K’
+[2.569s]   269 |     [01;31m[Kint_marker[m[K.controls.push_back(move_xy);
+[2.569s]       |     [01;31m[K^~~~~~~~~~[m[K
+[7.102s] gmake[2]: *** [CMakeFiles/ik_solver.dir/build.make:76: CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o] Error 1
+[7.102s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+[7.102s] gmake: *** [Makefile:146: all] Error 2
+[7.105s] Invoked command in '/home/ivan/Ivan/my_robot/build/my_robot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ivan/Ivan/my_robot/build/my_robot -- -j2 -l2

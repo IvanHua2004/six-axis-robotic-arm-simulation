@@ -1,0 +1,7 @@
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:[m[K In member function ‘[01m[Kvoid IKSolver::[01;32m[Ksetup_interactive_marker[m[K()[m[K’:
+[01m[K/home/ivan/Ivan/my_robot/src/ik_solver.cpp:269:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kint_marker[m[K’
+  269 |     [01;31m[Kint_marker[m[K.controls.push_back(move_xy);
+      |     [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ik_solver.dir/build.make:76: CMakeFiles/ik_solver.dir/src/ik_solver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ik_solver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
